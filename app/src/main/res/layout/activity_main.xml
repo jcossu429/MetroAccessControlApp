@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="400dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="54dp"
+        android:text="@string/metro_access_control_ip_address"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/ipAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ipAddress"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="54dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="@string/_192_168_0_212_21567"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:autofillHints=""
+        tools:ignore="LabelFor" />
+
+    <Button
+            android:id="@+id/btngate"
+            android:layout_width="84dp"
+            android:layout_height="93dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="83dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="326dp"
+            android:background="@drawable/ic_launcher_background"
+            android:text="@string/open_gate"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btndoor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ipAddress"
+            tools:text="OPEN GATE" />
+
+    <Button
+            android:id="@+id/btndoor"
+            android:layout_width="84dp"
+            android:layout_height="87dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="83dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginRight="28dp"
+            android:layout_marginBottom="326dp"
+            android:layout_toStartOf="@+id/btnelevator"
+            android:layout_toLeftOf="@+id/btnelevator"
+            android:background="@drawable/ic_launcher_background"
+            android:text="@string/open_door"
+            android:textColor="@android:color/holo_red_dark"
+            android:textColorHighlight="?android:attr/colorMultiSelectHighlight"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnelevator"
+            app:layout_constraintStart_toEndOf="@+id/btngate"
+            app:layout_constraintTop_toBottomOf="@+id/ipAddress"
+            tools:text="OPEN DOOR" />
+
+    <Button
+            android:id="@+id/btnelevator"
+            style="@android:style/Widget.Holo.Light.Button"
+            android:layout_width="93dp"
+            android:layout_height="81dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginRight="22dp"
+            android:layout_marginBottom="38dp"
+            android:background="@drawable/ic_launcher_background"
+            android:shadowColor="@color/colorPrimaryDark"
+            android:soundEffectsEnabled="true"
+            android:text="@string/open_elevator"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="?attr/editTextColor"
+            android:textColorHighlight="#7C2121"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btndoor"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.442"
+            tools:text="OPEN ELEVATOR" />
+
+    <ProgressBar
+            android:id="@+id/progress_bar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="200dp"
+            android:visibility="invisible"
+            tools:visibility="visible" />
+
+
+</RelativeLayout>

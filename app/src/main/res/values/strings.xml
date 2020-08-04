@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Metro Access Control App</string>
+    <string name="metro_access_control_ip_address">Metro Access Control IP Address</string>
+    <string name="open_gate">Open Gate</string>
+    <string name="open_elevator">open elevator</string>
+    <string name="_192_168_0_212_21567">192.168.0.212:21567</string>
+    <string name="open_door">Open Door</string>
+    <string name="Elevator">Elevator</string>
+</resources>
